@@ -1,82 +1,51 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway);
-body {
-  padding: 50px 35%;
-  font-size: 13px;
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 400;
-  width: 500px;
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
 }
 
-p.heading {
-  letter-spacing: 2px;
-  font-size: 13px;
-  margin-bottom: 10px;
-  border-width: 0px 0px 1px 0px;
-  border-style: dotted;
-  margin-top: 25px;
-  color: rgba(0,0,0,1);
+p {
+  line-height: 2rem;
 }
 
-h1 {
-  font-size: 96px;
-  line-height: 73px;
-  margin-bottom: 35px;
-  text-align: right;
+.button-collapse {
+  color: #26a69a;
 }
 
-div {
-  text-align: left;
-  display: inline-block;
-  white-space: normal;
-  vertical-align: top;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 0 2%;
-  max-width: 760px;
-  width: 760px;
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
 }
 
-$squareLength: 100px;
-
-div.tile1 {
-  border: black 2px dotted;
-  border-radius: 10px;
-  max-width: $squareLength;
-  width: $squareLength;
-  max-height: $squareLength;
-  height: $squareLength;
-}
-div.tile2 {
-  border: black 2px dotted;
-  border-radius: 10px;
-  max-width: $squareLength;
-  width: $squareLength;
-  max-height: $squareLength;
-  height: $squareLength;
-}
-div.tile3 {
-  border: black 2px dotted;
-  border-radius: 10px;
-  max-width: $squareLength;
-  width: $squareLength;
-  max-height: $squareLength;
-  height: $squareLength;
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
 }
 
-div.largeTile {
-  max-width: $squareLength*2;
-  width: $squareLength*2;
-  max-height: $squareLength*2;
-  height: $squareLength*2;
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
 }
 
-
-
-#draggable {
-  border: black 2px dotted;
-  width: 100px;
-  height: 100px;
-  padding: 0.5em;
+footer.page-footer {
+  margin: 0;
 }

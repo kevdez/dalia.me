@@ -5,31 +5,94 @@ html(lang='en')
     
     meta( charset='utf-8' )
     meta( http-equiv='X-UA-Compatible', content='IE=edge' )
+    
+    // Google Icon Font
+    link( href='http://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet')
+    
+    // Materialize.css
+    link( type='text/css' rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css' )
 
     // responsive mobile-first viewport
     meta( name='viewport', content='width=device-width, initial-scale=1.0' )
     
     link( href='css/style.css', rel='stylesheet', type='text/css' )
-    script(src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js')
-    script(src='////cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js')
-    script(src='js/script.js')
   
   body
-    p.heading welcome!
-    h1 dalia.
-    p It's a small shop based in California created by me, Dalia (that's my name). So basically, I've always been really crafty and enjoyed creating things since a young age. 
-    p After having a shop dedicated to bracelets and necklaces I began to venture off into making things for something I was really passionate about: music. I started making pins for bands that I liked because it was a cool way to show my love and devotion for that band in a cool and punk rock way ya feel?
-    p In an incredible stroke of luck other people thought so too, and they not only started buying pins, they also suggested more for me to design. I got to know more music, and people who are passionate about music and that's more than I could have ver hoped more. 
-    p But yeah, that's how Bandshite grew into something way bigger than I could have ever imagined. The best part is that it's still growing, so check out our site, recommend some bands, we can't wait to hear from you!
-
-    .tile1
-      p ayy lmao 👽
-    .tile2
-      p #yolo
-    .tile3
-      p aye!
-    div(id="draggable" class="ui-widget-content")
-      p drag me around
-
+    nav.white(role='navigation')
+      .nav-wrapper.container
+        a#logo-container(href='#' class='brand-logo') Logo
+        ul.right.hide-on-med-and-down
+          li
+            a(href='#') Navbar Link
+        
+        ul#nav-mobile.side-nav
+          li
+            a(href='#') Navbar Link
+        a.button-collapse(href='#' data-activates='nav-mobile')
+          i(class='material-icons') menu
+    
+    #index-banner.parallax-container
+      .section.no-pad-bot
+        .container
+          br
+          h1.header.center.teal-text.text-lighten-2 dalia.me
+          .row.center
+            h5.header.col.s12.light A portfolio site of the owner of Bandshite.com
+          .row.center
+            a#download-button.btn-large.waves-effect.waves-light.teal.lighten-1(href='#') Visit Bandshite
+          br
+      .parallax
+        img(src='background1.jpg' alt='Beach background 1')
+        
+    .container
+      .section
+        .row
+          .col.s12.m4
+            .icon-block
+              h2.center.brown-text
+                i.material-icons flash_on
+              h5.center Graphic design
+              p.light I am very interested in graphic design.
+              
+          .col.s12.m4
+            .icon-block
+              h2.center.brown-text
+                i.material-icons group
+              h5.center Photography
+              p.light I love photography, you can have a link of that here [link].
+              
+          .col.s12.m4
+            .icon-block
+              h2.center.brown-text
+                i.material-icons settings
+              h5.center Art
+              p.light I love making pins!
+              
+    .parallax-container.valign-wrapper
+      .section.no-pad-bot
+        .container
+          .row.center
+          h5.header.col.s12.black "We're all in the gutter but some of us are staring at the stars."
+          
+      .parallax
+        img(src='background2.jpg' alt='Beach Background 2')
+    
+    .container
+      .section
+        .row
+          .col.s12.center
+            h4 About myself
+            
+            p It's a small shop based in California created by me, Dalia (that's my name). So basically, I've always been really crafty and enjoyed creating things since a young age. 
+            p After having a shop dedicated to bracelets and necklaces I began to venture off into making things for something I was really passionate about: music. I started making pins for bands that I liked because it was a cool way to show my love and devotion for that band in a cool and punk rock way ya feel?
+            p In an incredible stroke of luck other people thought so too, and they not only started buying pins, they also suggested more for me to design. I got to know more music, and people who are passionate about music and that's more than I could have ver hoped more. 
+            p But yeah, that's how Bandshite grew into something way bigger than I could have ever imagined. The best part is that it's still growing, so check out our site, recommend some bands, we can't wait to hear from you!
+    
+    // jQuery
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js')
+    // Materialize JS
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js')
+    script(src='js/script.js')
 
     
